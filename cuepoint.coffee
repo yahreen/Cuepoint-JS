@@ -24,6 +24,10 @@ class Cuepoint extends Utils
 	    @subtitles.innerHTML = @html
 	
 	toString: (@html) ->
+	
+	setTime: (@time) ->
+		@video.currentTime = time
+		@video.play()
 		
 	addSlide: (@time, @html) ->
 		self = this

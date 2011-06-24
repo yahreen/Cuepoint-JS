@@ -45,6 +45,11 @@
     Cuepoint.prototype.toString = function(html) {
       this.html = html;
     };
+    Cuepoint.prototype.setTime = function(time) {
+      this.time = time;
+      this.video.currentTime = time;
+      return this.video.play();
+    };
     Cuepoint.prototype.addSlide = function(time, html) {
       var self;
       this.time = time;
