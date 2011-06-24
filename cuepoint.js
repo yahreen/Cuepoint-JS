@@ -1,15 +1,3 @@
-/*
-
-Cuepoint.js
-Written by Owain Lewis
-Visit http://cuepoint.org for reference
-A HTML5 cuepoint plugin
-Released under the MIT license
-http://www.owainlewis.com 
-http://zaphra.com
-
-*/
-
 (function() {
   var Cuepoint, Utils, utils;
   var __hasProp = Object.prototype.hasOwnProperty, __extends = function(child, parent) {
@@ -25,7 +13,7 @@ http://zaphra.com
     Utils.prototype.log = function(args) {
       this.args = args;
       if (window.console) {
-        return console.log(arguments.slice);
+        return console.log(Array.prototype.slice.call(this, arguments));
       }
     };
     return Utils;

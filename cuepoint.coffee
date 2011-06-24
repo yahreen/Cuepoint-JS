@@ -1,7 +1,7 @@
 #Cuepoint Coffee. A library for HTML5 Video Subtitles
 class Utils
 	log: (@args) ->
-		console.log arguments.slice if window.console 
+		console.log Array.prototype.slice.call this, arguments if window.console 
 
 class Cuepoint extends Utils
 	constructor: ->
